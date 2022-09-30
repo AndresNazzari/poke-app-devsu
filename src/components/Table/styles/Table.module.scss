@@ -1,0 +1,49 @@
+.table {
+  width: 100%;
+  margin-top: 2rem;
+  background-color: var(--gray-4);
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid var(--gray-2);
+  }
+
+  th {
+    padding: 0.75rem 2rem;
+    text-align: center;
+  }
+
+  td {
+    padding: 0.75rem 0.5rem;
+
+    div {
+      display: flex;
+      justify-content: space-evenly;
+
+      button {
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+      }
+
+      svg {
+        width: 24px;
+      }
+
+      .deleteIcon {
+        fill: var(--primary);
+      }
+
+      .editIcon {
+        stroke: var(--gray-0);
+        fill: var(--primary);
+      }
+    }
+  }
+}

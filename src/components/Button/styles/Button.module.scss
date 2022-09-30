@@ -1,0 +1,47 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+  height: 50px;
+  background-color: var(--primary);
+  color: var(--gray-4);
+  font-size: 1.25rem;
+  font-weight: bolder;
+  border-radius: 5px;
+  cursor: pointer;
+
+  div {
+    display: flex;
+    align-items: center;
+
+    svg {
+      color: var(--gray-4);
+      font-weight: bolder;
+      height: var(--font-size-2);
+    }
+
+    span {
+      color: var(--gray-4);
+      height: var(--font-size-4);
+      font-weight: var(--font-weight-bold);
+      margin-left: var(--spacer-2);
+      line-height: var(--font-size-4);
+    }
+  }
+
+  &:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+  }
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+
+  &:hover {
+    opacity: 0.5;
+    // transition: opacity 0.2s ease-in-out;
+  }
+}

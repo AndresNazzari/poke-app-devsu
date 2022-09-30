@@ -1,0 +1,36 @@
+.formSlider {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+
+    label,
+    span {
+      font-weight: bold;
+    }
+    .sliderContainer {
+      display: flex;
+      align-items: center;
+
+      span {
+        margin: 0 0.5rem;
+      }
+
+      .slider {
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background: var(--gray-2);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
